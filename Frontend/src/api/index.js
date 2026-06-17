@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api', 
+  // Point directly to your live production API
+  baseURL: 'https://blog-website-3-3ag4.onrender.com', 
 });
 
 // Attach JWT token automatically to every request
